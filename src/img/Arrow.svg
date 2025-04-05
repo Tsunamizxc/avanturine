@@ -1,0 +1,21 @@
+<svg width="59.644531" height="58.647766" viewBox="0 0 59.6445 58.6478" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_38_317_dd" x="0.000000" y="0.000000" width="59.644531" height="58.647766" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<path id="Vector" d="M28.22 31.44L27.24 30.59L33.02 25.63L27.24 20.67L28.22 19.82L34.98 25.63L28.22 31.44Z" fill="#C0BFC4" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<g filter="url(#filter_38_317_dd)">
+		<ellipse id="Ellipse 2" cx="29.822266" cy="25.323853" rx="25.322306" ry="24.823879" stroke="#C0BFC4" stroke-opacity="0.250000" stroke-width="1.000000"/>
+	</g>
+</svg>

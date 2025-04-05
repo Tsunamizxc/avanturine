@@ -39,7 +39,7 @@ body {
             color: rgb(192, 191, 196);
             font-family: Poppins;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 500;
             line-height: 30px;
             letter-spacing: 15%;
             text-align: left;
@@ -61,7 +61,6 @@ body {
         &_header {
             display: flex;
             flex-direction: column;
-            gap: 20px;
             max-width: 683px;
             margin-top: 218px;
             margin-bottom: 350px;
@@ -104,11 +103,15 @@ body {
         }
         // .hello__header_btn
         &_btn {
+            max-width: 350px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
             color: rgb(192, 191, 196);
             font-family: Poppins;
             font-size: 30px;
-            font-weight: 600;
-            line-height: 40px;
+            font-weight: 400;
             letter-spacing: 10%;
             text-align: left;
             text-transform: uppercase;
@@ -126,6 +129,8 @@ body {
     &__row {
         display: flex;
         justify-content: end;
+        align-items: center;
+        gap: 30px;
         padding-bottom: 90px;
         // .social__row_text
         &_text {
@@ -141,7 +146,11 @@ body {
         // .social__row_line
         &_line {}
         // .social__row_icons
-        &_icons {}
+        &_icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
     }
     // .social__icons
     &__icons {
