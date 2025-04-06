@@ -1,8 +1,17 @@
 .about {
     // .about__row
+   padding: 120px 0px;
+    background: linear-gradient(225.00deg, rgba(105, 102, 101, 0.16),rgba(76, 74, 74, 0.24) 34.896%,rgba(22, 22, 23, 0.4) 100%);
     &__row {
+        display: flex;
+        align-items: center;
         // .about__row_text
-        &_text {}
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        
+        }   
         // .about__row_img
         &_img {}
     }
@@ -10,7 +19,11 @@
     &__text {
         max-width: 732px;
         // .about__text_box
-        &_box {}
+        &_box {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
         // .about__text_title
         &_title {
             color: rgb(192, 191, 196);
@@ -52,6 +65,10 @@
     // .about__img
     &__img {
         // .about__img_item
-        &_item {}
+        &_item {
+            position: absolute;
+            top: -220px;
+            right: -150px;
+        }
     }
 }
