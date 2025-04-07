@@ -155,10 +155,7 @@
         --swiper-theme-color: #ffffff;
     }
     
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
+    .dance__card_slider .swiper-horizontal>.swiper-pagination-bullets {
         bottom: 20px;
         left: -240px;
     }
@@ -168,10 +165,10 @@
         height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 15px));
     }
     
-    .swiper-pagination-bullet {
+    .dance__card_slider .swiper-pagination-bullet {
         opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.5);
     }
     
-    .swiper-pagination-bullet-active {
+    .dance__card_slider .swiper-pagination-bullet-active {
         opacity: var(--swiper-pagination-bullet-opacity, 1);
     }
