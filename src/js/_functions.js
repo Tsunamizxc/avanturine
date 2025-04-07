@@ -12,11 +12,24 @@
 // const modal = new GraphModal();
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination, EffectFade } from 'swiper';
+Swiper.use([Navigation, Pagination, EffectFade]);
+const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 'auto',
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 // Подключение плавной прокрутки к якорям
 // import SmoothScroll from 'smooth-scroll';
