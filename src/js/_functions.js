@@ -45,6 +45,20 @@ const swiperG = new Swiper('.mySwiperGallery', {
     },
 });
 
+const swiperR = new Swiper('.mySwiperReviews', {
+   loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 // Подключение плавной прокрутки к якорям
 // import SmoothScroll from 'smooth-scroll';
 // const scroll = new SmoothScroll('a[href*="#"]');
