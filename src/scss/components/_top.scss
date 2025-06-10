@@ -11,7 +11,7 @@ body {
 .header {
     // .header__row
     &__row {
-        padding-top: 80px;
+        padding-top: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -51,6 +51,10 @@ body {
 .hello {
     // .hello__row
     position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__row {
         display: flex;
         justify-content: end;
@@ -62,8 +66,8 @@ body {
             display: flex;
             flex-direction: column;
             max-width: 683px;
-            margin-top: 218px;
-            margin-bottom: 350px;
+            // margin-top: 218px;
+            // margin-bottom: 350px;
         }
     }
     // .hello__image
@@ -71,8 +75,8 @@ body {
         // .hello__image_item
         &_item {
             position: absolute;
-            left: -80px;
-            top: -213px;
+            left: -140px;
+            top: -450px;
             z-index: -1;
         }
     }

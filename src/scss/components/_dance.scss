@@ -1,16 +1,16 @@
     .dance {
         background: linear-gradient(225.29deg, rgba(85, 84, 157, 0.2) -0.327%, rgba(18, 11, 44, 0.16) 100%);
         // .dance__header
-        padding: 120px 0px;
+        padding: 90px 0px;
         &__header {
-            margin-bottom: 90px;
+            margin-bottom: 60px;
             // .dance__header_title
             &_title {
                 color: rgb(192, 191, 196);
                 font-family: Poppins;
                 font-size: 50px;
                 font-weight: 500;
-                line-height: 45px;
+                // line-height: 45px;
                 letter-spacing: 15%;
                 text-align: center;
             }
@@ -72,7 +72,7 @@
                 padding: 18px 35px;
                 border-radius: 42px 0px 30px 0px;
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                background: rgba(22, 22, 23, 0.64);
+                background: rgb(22, 22, 23);
             }
             // .dance__info_title
             &_title {
@@ -123,7 +123,7 @@
                 background: rgba(22, 22, 23, 0.464);
                 transition: 0.3s all ease;
                 &:hover {
-                    background: rgba(22, 22, 23, 0.64);
+                    background: rgb(22, 22, 23);
                 }
             }
         }

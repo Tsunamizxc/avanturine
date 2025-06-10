@@ -1,6 +1,6 @@
 .about {
     // .about__row
-   padding: 120px 0px;
+   padding: 90px 0px;
     background: linear-gradient(225.00deg, rgba(105, 102, 101, 0.16),rgba(76, 74, 74, 0.24) 34.896%,rgba(22, 22, 23, 0.4) 100%);
     &__row {
         display: flex;
@@ -22,7 +22,7 @@
         &_box {
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 20px;
         }
         // .about__text_title
         &_title {
@@ -67,8 +67,9 @@
         // .about__img_item
         &_item {
             position: absolute;
-            top: -220px;
+            top: -195px;
             right: -150px;
+            width: 750px;
         }
     }
 }
