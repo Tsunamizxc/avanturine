@@ -1,0 +1,159 @@
+.footer {
+
+		// .footer__row
+padding: 40px 0px;
+		&__row {
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+			// .footer__row_top
+
+			&_top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+			}
+
+			// .footer__row_bottom
+
+			&_bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+		}
+
+		// .footer__top
+
+		&__top {
+
+			// .footer__top_logo
+
+			&_logo {
+			}
+
+			// .footer__top_menu
+
+			&_menu {
+			}
+		}
+
+		// .footer__logo
+
+		&__logo {
+
+			// .footer__logo_item
+
+			&_item {
+			}
+
+			// .footer__logo_img
+
+			&_img {
+			}
+		}
+
+		// .footer__menu
+
+		&__menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:608px;
+			// .footer__menu_item
+
+			&_item {
+			}
+
+			// .footer__menu_link
+
+			&_link {
+                color: rgb(192, 191, 196);
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 15%;
+text-align: left;
+text-transform: uppercase;
+			}
+		}
+
+		// .footer__bottom
+
+		&__bottom {
+
+			// .footer__bottom_social
+
+			&_social {
+			}
+
+			// .footer__bottom_contacts
+
+			&_contacts {
+                display: flex;
+flex-direction: column;
+gap: 5px;
+			}
+		}
+
+		// .footer__social
+
+		&__social {
+
+			// .footer__social_title
+&_icons{
+    display: flex;
+gap: 10px;
+}
+			&_title {
+                color: rgb(192, 191, 196);
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 15%;
+text-align: left;
+text-transform: uppercase;
+			}
+		}
+
+		// .footer__icons
+
+		&__icons {
+
+			// .footer__icons_link
+
+			&_link {
+			}
+
+			// .footer__icons_img
+
+			&_img {
+			}
+		}
+
+		// .footer__contacts
+
+		&__contacts {
+
+            &_item{
+                color: rgb(192, 191, 196);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+            }
+			// .footer__contacts_img
+
+			&_img {
+			}
+		}
+}
+
+
+
