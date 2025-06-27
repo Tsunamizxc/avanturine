@@ -45,7 +45,13 @@ img {
   margin: 0 auto;
 
   @media (max-width: 1024px) {
+  max-width: rem(768);
+
   }
+  @media (max-width: 1024px) {
+    max-width: rem(390);
+  
+    }
 }
 
 

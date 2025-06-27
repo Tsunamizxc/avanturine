@@ -5,15 +5,15 @@
 // import { isMobile, isTablet, isDesktop } from "./functions/check_client_width";
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+import { burger } from './functions/burger';
 
 // Реализация модального окна
 // import GraphModal from 'graph-modal';
 // const modal = new GraphModal();
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination, EffectFade } from 'swiper';
-Swiper.use([Navigation, Pagination, EffectFade]);
+import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper';
+Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 const swiper = new Swiper('.mySwiper', {
     slidesPerView: 'auto',
     effect: 'fade',
@@ -31,23 +31,21 @@ const swiper = new Swiper('.mySwiper', {
     },
 });
 const swiperG = new Swiper('.mySwiperGallery', {
-    loop: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    spaceBetween: 20,
+    slidesPerView: "auto",
+    spaceBetween: 30,
     pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
 });
 
 const swiperR = new Swiper('.mySwiperReviews', {
-   loop: true,
-    centeredSlides: true,
+//    loop: true,
+    // centeredSlides: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     pagination: {
@@ -58,15 +56,23 @@ const swiperR = new Swiper('.mySwiperReviews', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        1024: {
+                loop: false,
+             centeredSlides: false,
+        },
+
+
+    }
 });
 // Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
+import SmoothScroll from 'smooth-scroll';
+const scroll = new SmoothScroll('a[href*="#"]');
 
 // функция блокировки и разблокировки скролла
-// import { disable_scroll, enable_scroll } from "./functions/scroll";
-// disable_scroll();
-// enable_scroll();
+import { disable_scroll, enable_scroll } from "./functions/scroll";
+disable_scroll();
+enable_scroll();
 
 // добавление маски на телефон
 // import phone_mask from "./functions/phone_mask";

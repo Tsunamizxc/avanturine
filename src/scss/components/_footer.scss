@@ -1,18 +1,23 @@
 .footer {
 
 		// .footer__row
-padding: 40px 0px;
+padding: rem(40) rem(0);
 		&__row {
 
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: rem(20);
 			// .footer__row_top
 
 			&_top {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+				@include tablet{
+					flex-direction: column;
+					gap: rem(20);
+					margin-bottom: 20px;
+				}
 			}
 
 			// .footer__row_bottom
@@ -51,6 +56,7 @@ padding: 40px 0px;
 			// .footer__logo_img
 
 			&_img {
+				width: rem(295);
 			}
 		}
 
@@ -60,7 +66,7 @@ padding: 40px 0px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-width:608px;
+width:rem(608);
 			// .footer__menu_item
 
 			&_item {
@@ -69,14 +75,17 @@ width:608px;
 			// .footer__menu_link
 
 			&_link {
-                color: rgb(192, 191, 196);
-font-family: Poppins;
-font-size: 20px;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 15%;
-text-align: left;
-text-transform: uppercase;
+				color: rgb(192, 191, 196);
+				font-family: Poppins;
+				font-size: rem(18);
+				font-weight: 500;
+				letter-spacing: 15%;
+				text-align: left;
+				text-transform: uppercase;
+				transition: 0.3s all ease;
+				&:hover{
+					opacity: 0.7;
+				}
 			}
 		}
 
@@ -87,6 +96,9 @@ text-transform: uppercase;
 			// .footer__bottom_social
 
 			&_social {
+				display: flex;
+				flex-direction:column;
+				gap: rem(10);
 			}
 
 			// .footer__bottom_contacts
@@ -94,7 +106,7 @@ text-transform: uppercase;
 			&_contacts {
                 display: flex;
 flex-direction: column;
-gap: 5px;
+gap: rem(10);
 			}
 		}
 
@@ -105,14 +117,13 @@ gap: 5px;
 			// .footer__social_title
 &_icons{
     display: flex;
-gap: 10px;
+gap: rem(20);
 }
 			&_title {
                 color: rgb(192, 191, 196);
 font-family: Poppins;
-font-size: 20px;
+font-size: rem(20);
 font-weight: 500;
-line-height: 40px;
 letter-spacing: 15%;
 text-align: left;
 text-transform: uppercase;
@@ -131,6 +142,7 @@ text-transform: uppercase;
 			// .footer__icons_img
 
 			&_img {
+				width: rem(25);
 			}
 		}
 
@@ -139,9 +151,12 @@ text-transform: uppercase;
 		&__contacts {
 
             &_item{
+				display: flex;
+				align-items: center;
+				gap:rem(10);
                 color: rgb(192, 191, 196);
 font-family: Poppins;
-font-size: 16px;
+font-size: rem(16);
 font-weight: 500;
 line-height: 150%;
 letter-spacing: 0%;
@@ -151,6 +166,7 @@ text-transform: uppercase;
 			// .footer__contacts_img
 
 			&_img {
+				width: rem(25);
 			}
 		}
 }

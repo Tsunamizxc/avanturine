@@ -1,31 +1,47 @@
     .dance {
         background: linear-gradient(225.29deg, rgba(85, 84, 157, 0.2) -0.327%, rgba(18, 11, 44, 0.16) 100%);
         // .dance__header
-        padding: 90px 0px;
+        padding: rem(90) rem(0);
+        @include tablet{
+            padding: rem(60) rem(0);
+        }
         &__header {
-            margin-bottom: 60px;
+            margin-bottom: rem(60);
+            @include tablet{
+                margin-bottom: rem(30);
+            }
             // .dance__header_title
             &_title {
                 color: rgb(192, 191, 196);
                 font-family: Poppins;
-                font-size: 50px;
+                font-size: rem(40);
                 font-weight: 500;
                 // line-height: 45px;
                 letter-spacing: 15%;
                 text-align: center;
+                @include tablet{
+                    font-size: rem(24);
+                }
             }
         }
         // .dance__row
         &__row {
             display: flex;
             flex-wrap: wrap;
-            gap: 40px;
+            gap:rem(40);
             justify-content: space-between;
+            @include tablet{
+                gap:rem(20);
+            }
             // .dance__row_card
             &_card {
                 position: relative;
-                width: 643px;
-                height: 420px;
+                width: rem(700);
+                // height: 420px;
+                @include tablet{
+                    width: rem(373);
+                    height: rem(400);
+                }
             }
         }
         // .dance__card
@@ -43,13 +59,13 @@
                 z-index: 10;
                 position: absolute;
                 right: 0;
-                bottom: -2px;
-                border-radius: 39px 0px 42px 0px;
+                bottom: rem(-2);
+                border-radius: rem(40) rem(0) rem(40) rem(0);
                 background: rgba(0, 0, 0, 0.6);
-                padding: 25px 67px;
+                padding: rem(25) rem(67);
                 color: rgb(255, 255, 255);
                 font-family: Poppins;
-                font-size: 24px;
+                font-size: rem(24);
                 font-weight: 500;
                 line-height: 140%;
                 letter-spacing: 0%;
@@ -57,6 +73,11 @@
                 transition: 0.3s all ease;
                 &:hover {
                     background: rgb(22, 22, 23);
+                }
+                @include tablet{
+                    padding: rem(15) rem(47);
+                    font-size: rem(18);
+                    bottom: rem(0);
                 }
             }
         }
@@ -69,39 +90,45 @@
         &__info {
             // .dance__info_content
             &_content {
-                padding: 18px 35px;
-                border-radius: 42px 0px 30px 0px;
-                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                padding: rem(18) rem(35);
+                border-radius: rem(42) rem(0) rem(30) rem(0);
+                box-shadow: rem(0) rem(4) rem(4) rem(0) rgba(0, 0, 0, 0.25);
                 background: rgb(22, 22, 23);
             }
             // .dance__info_title
             &_title {
                 color: rgb(255, 255, 255);
                 font-family: Poppins;
-                font-size: 24px;
+                font-size:rem(24);
                 font-weight: 500;
-                line-height: 45px;
+                // line-height: 45px;
                 letter-spacing: 0%;
                 text-align: left;
                 text-transform: capitalize;
+                @include tablet{  
+                    font-size:rem(18);
+                }
             }
             // .dance__info_price
             &_price {
                 color: rgb(255, 255, 255);
                 font-family: Poppins;
-                font-size: 20px;
+                font-size: rem(20);
                 font-weight: 500;
                 line-height: 140%;
                 letter-spacing: 0%;
                 text-align: left;
+                @include tablet{  
+                    font-size:rem(14);
+                }
             }
             // .dance__info_yold
             &_yold {
                 color: rgba(255, 255, 255, 0.6);
                 font-family: Poppins;
-                font-size: 12px;
+                font-size: rem(12);
                 font-weight: 500;
-                line-height: 20px;
+                line-height: rem(20);
                 letter-spacing: 0%;
                 text-align: left;
             }
@@ -109,43 +136,60 @@
             &_btn {
                 color: rgb(255, 255, 255);
                 font-family: Poppins;
-                font-size: 14px;
+                font-size: rem(14);
                 font-weight: 500;
-                line-height: 24px;
+                line-height: rem(24);
                 letter-spacing: 0%;
                 text-align: left;
                 text-decoration-line: underline;
                 position: absolute;
-                top: 129px;
-                padding: 4px 80px;
-                border-radius: 0px 0px 21px 0px;
-                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                top:rem(112);
+                padding: rem(4) rem(80);
+                border-radius: rem(0) rem(0) rem(21) rem(0);
+                box-shadow: rem(0) rem(4) rem(4) rem(0) rgba(0, 0, 0, 0.25);
                 background: rgba(22, 22, 23, 0.464);
                 transition: 0.3s all ease;
                 &:hover {
                     background: rgb(22, 22, 23);
                 }
+                @include tablet{  
+                    top:rem(94);
+                }
             }
         }
     }
     
-    .swiper-container {
-        z-index: -1;
-        overflow: hidden;
-        border-radius: 46px;
-        width: 643px;
-        height: 420px;
-    }
     
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
+    .dance{
+
+        & .swiper-container {
+                z-index: -1;
+                overflow: hidden;
+                border-radius: rem(46);
+                width:rem(700);
+                height: rem(420);
+            }        
+        & .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            @include tablet{  
+                overflow: hidden;
+                border-radius: rem(46);
+                height: rem(400);
+            }
+        }
+        & .swiper-slide img {
+            display: block;
+            width: 100%;
+            // height: 100%;
+            @include tablet{  
+                height: 100%;
+            }
+        }
     }
+   
     
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-    }
+   
     
      :root {
         --swiper-navigation-size: 18px;
@@ -156,8 +200,11 @@
     }
     
     .dance__card_slider .swiper-horizontal>.swiper-pagination-bullets {
-        bottom: 20px;
-        left: -240px;
+        bottom: rem(20);
+        left: rem(-240);
+        @include tablet{
+            left: rem(-120);
+         }
     }
     
     .swiper-pagination-bullet {
