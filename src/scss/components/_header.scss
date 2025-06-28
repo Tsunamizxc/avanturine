@@ -6,8 +6,23 @@
     transition: 0.3s all ease;
 
     &.active {
-        background-color: rgb(29 26 37);
+        background: linear-gradient(225.29deg, rgb(22, 22, 35) -0.491%, rgb(13, 10, 26) 100%);
          box-shadow: rem(0) rem(5) rem(10) rem(0) rgba(0, 0, 0, 0.464);
+         & .header__logo_img{
+            width: rem(250);
+            @include tablet{
+                width: rem(210);
+            }
+            @include mobile{
+                width: rem(140);
+            }
+         }
+         & .header__menu{
+            width: rem(500);
+         }
+         & .header__menu_link{
+            font-size: rem(16);
+         }
     }
       @include mobile{
                 font-size: rem(16);
@@ -31,6 +46,7 @@
         // .header__logo_img
         &_img {
             width: rem(295);
+            transition: 0.3s all ease;
             @include tablet{
                 width: rem(230);
             }
@@ -45,6 +61,7 @@
         display: flex;
         justify-content: space-between;
         width: rem(600);
+        transition: 0.3s all ease;
         @include tablet{
             width: rem(500);
             display: none;
@@ -295,4 +312,12 @@
 }
 .header__top_button.burger-item {
     margin-top: rem(20);
+}
+
+.burger{
+    @include mobile{
+        --burger-width: 15px;
+        --burger-height: 15px;
+        --burger-line-height: 1px;
+    }
 }

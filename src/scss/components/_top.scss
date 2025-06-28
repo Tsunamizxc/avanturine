@@ -47,7 +47,7 @@ body {
             top: rem(-300);
             width: rem(675);
             z-index: -1;
-            animation: circularMove 6s linear infinite;
+           
             @include tablet{
                 width: rem(727);
                 left: unset;

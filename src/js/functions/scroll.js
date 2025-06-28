@@ -1,13 +1,34 @@
 let scrollPosition = 0;
-console.log(window.pageYOffset);
+let isScrollDisabled = false;
+
 export function disable_scroll() {
-  scrollPosition = window.pageYOffset;
-  document.body.style.top = `${scrollPosition}px`;
-  document.body.classList.add('dis-scroll');
+  if (isScrollDisabled) return;
+  
+  // Сохраняем текущую позицию скролла
+  scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+  // Блокируем скролл
+  document.querySelector(".site-container").classList.add("dis-scroll");
+  document.querySelector(".site-container").style.top = `-${scrollPosition}px`;
+  
+  isScrollDisabled = true;
 }
 
 export function enable_scroll() {
-  document.body.classList.remove('dis-scroll');
-  window.scrollTo(0, scrollPosition);
-  document.body.style.top = '0';
+  if (!isScrollDisabled) return;
+  
+  // Разблокируем скролл
+  const container = document.querySelector(".site-container");
+  container.classList.remove("dis-scroll");
+  container.style.top = '';
+  
+  // Возвращаем позицию скролла
+  requestAnimationFrame(() => {
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'auto'
+    });
+  });
+  
+  isScrollDisabled = false;
 }

@@ -2,6 +2,7 @@
 // background: #778EA866;
     background: linear-gradient(225.29deg, rgba(85, 84, 157, 0.2) -0.327%, rgba(18, 11, 44, 0.16) 100%);
 padding: rem(90) rem(0);
+overflow: hidden;
 		// .reviews__header
 		@include tablet{
 			padding: rem(60) rem(0)
@@ -19,7 +20,7 @@ padding: rem(90) rem(0);
 			&_title {
                 color: rgb(192, 191, 196);
 			font-family: Poppins;
-			font-size: rem(30);
+			font-size: rem(40);
 			font-weight: 600;
 			letter-spacing: 5%;
 			text-transform: uppercase;

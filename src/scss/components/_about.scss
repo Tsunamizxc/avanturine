@@ -96,7 +96,7 @@
             top: rem(-110);
             right:rem(0);
             width: rem(550);
-            animation: circularMove 4s linear infinite;
+            
             @include tablet{
                 top: rem(-80);
                 right:rem(-175);
@@ -112,20 +112,5 @@
     }
 }
 
-@keyframes circularMove {
-	0% {
-	  transform: translateX(0) translateY(0);
-	}
 
-	50% {
-	  transform: translateX(rem(2)) translateY(rem(2));
-	}
-
-	100% {
-	  transform: translateX(0) translateY(0);
-	}
-  }
   
-  .element {
-	
-  }
