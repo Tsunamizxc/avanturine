@@ -86,3 +86,26 @@ enable_scroll();
 // data-eng-field - английские символы
 // data-email-field - ограничение символов для почты
 // data-allowed-field - создано для каких-то резиновых ограничений, можно менять
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector(".header");
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    let height = window.innerWidth <= 1024 ? 10 : 20;
+    if (scrollPosition > height) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});
+
+
+// window.addEventListener('scroll', function() {
+//     const headerM = document.querySelector(".burger-menu");
+//     const scrollPosition = window.scrollY || window.pageYOffset;
+//     let height = window.innerWidth <= 1024 ? 10 : 120;
+//     if (scrollPosition > height) {
+//         headerM.classList.add('active');
+//     } else {
+//         headerM.classList.remove('active');
+//     }
+// });

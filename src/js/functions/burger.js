@@ -8,17 +8,18 @@ import { disable_scroll, enable_scroll } from '../functions/scroll';
   const overlay = document?.querySelector('[data-menu-overlay]');
 
   burger?.addEventListener('click', (e) => {
+    e.preventDefault();
     burger?.classList.toggle('burger--active');
     menu?.classList.toggle('menu--active');
 
     if (menu?.classList.contains('menu--active')) {
       burger?.setAttribute('aria-expanded', 'true');
       burger?.setAttribute('aria-label', 'Закрыть меню');
-      disableScroll();
+      disable_scroll();
     } else {
       burger?.setAttribute('aria-expanded', 'false');
       burger?.setAttribute('aria-label', 'Открыть меню');
-      enableScroll();
+      enable_scroll();
     }
   });
 
@@ -27,7 +28,7 @@ import { disable_scroll, enable_scroll } from '../functions/scroll';
     burger?.setAttribute('aria-label', 'Открыть меню');
     burger.classList.remove('burger--active');
     menu.classList.remove('menu--active');
-    enableScroll();
+    enable_scroll();
   });
 
   menuItems?.forEach(el => {
@@ -36,7 +37,7 @@ import { disable_scroll, enable_scroll } from '../functions/scroll';
       burger?.setAttribute('aria-label', 'Открыть меню');
       burger.classList.remove('burger--active');
       menu.classList.remove('menu--active');
-      enableScroll();
+      enable_scroll();
     });
   });
 })();
