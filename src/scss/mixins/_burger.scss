@@ -13,7 +13,11 @@
   color: #ffffff;
   background-color: transparent;
   cursor: pointer;
-
+  @include mobile{
+    --burger-width: 15px;
+    --burger-height: 15px;
+    --burger-line-height: 1px;
+}
   &::before,
   &::after {
     content: "";

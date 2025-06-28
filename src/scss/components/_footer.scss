@@ -26,6 +26,11 @@ padding: rem(40) rem(0);
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+				@include mobile{
+					flex-direction: column;
+					gap: rem(20);
+					margin-bottom: 20px;
+				}
             }
 		}
 
@@ -67,6 +72,14 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width:rem(608);
+@include tablet{
+	width:100%;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: rem(10);
+
+
+}
 			// .footer__menu_item
 
 			&_item {

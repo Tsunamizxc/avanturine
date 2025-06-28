@@ -23,7 +23,7 @@ import { disable_scroll, enable_scroll } from '../functions/scroll';
     }
   });
 
-  overlay?.addEventListener('click', () => {
+  overlay?.addEventListener('click', (e) => {
     burger?.setAttribute('aria-expanded', 'false');
     burger?.setAttribute('aria-label', 'Открыть меню');
     burger.classList.remove('burger--active');
@@ -32,7 +32,7 @@ import { disable_scroll, enable_scroll } from '../functions/scroll';
   });
 
   menuItems?.forEach(el => {
-    el.addEventListener('click', () => {
+    el.addEventListener('click', (e) => {
       burger?.setAttribute('aria-expanded', 'false');
       burger?.setAttribute('aria-label', 'Открыть меню');
       burger.classList.remove('burger--active');

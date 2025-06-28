@@ -42,6 +42,10 @@
                     width: rem(373);
                     height: rem(400);
                 }
+                @include mobile{
+                    width: 100%;
+                    height: rem(300);
+                }
             }
         }
         // .dance__card
@@ -176,6 +180,10 @@
                 overflow: hidden;
                 border-radius: rem(46);
                 height: rem(400);
+            }
+            @include mobile{
+                height: rem(300);
+
             }
         }
         & .swiper-slide img {

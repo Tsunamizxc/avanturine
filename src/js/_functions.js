@@ -61,8 +61,6 @@ const swiperR = new Swiper('.mySwiperReviews', {
                 loop: false,
              centeredSlides: false,
         },
-
-
     }
 });
 // Подключение плавной прокрутки к якорям
@@ -109,3 +107,22 @@ window.addEventListener('scroll', function() {
 //         headerM.classList.remove('active');
 //     }
 // });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); 
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            const offset = 60; 
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+            window.scrollTo({
+                top: targetPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

@@ -1,15 +1,16 @@
 .gallery {
-padding-bottom: rem(90);
+padding:rem(90) rem(0);
 		// .gallery__header
     @include tablet{
-      padding-bottom: rem(60);
+      padding: rem(60) rem(0);
   }
     &__header {
-        margin: rem(90) rem(0) rem(40) rem(0);
+        margin: rem(0) rem(0) rem(40) rem(0);
         // .gallery__header_title
         @include tablet{
-          margin: rem(60) rem(0) rem(30) rem(0);
+          margin: rem(0) rem(0) rem(30) rem(0);
       }
+ 
         &_title {
             color: rgb(192, 191, 196);
             font-family: Poppins;
