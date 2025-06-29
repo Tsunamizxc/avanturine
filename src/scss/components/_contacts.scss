@@ -1,7 +1,10 @@
 .contacts {
-    padding: rem(60) rem(0);
+    padding: rem(90) rem(0);
 background: linear-gradient(225.29deg, rgba(22, 22, 23, 0.16) -0.41%,rgba(85, 84, 157, 0.08) 100%);
 		// .contacts__row
+		@include mobile{
+			padding: rem(60) rem(0);
+		}
 		&__row {
 
 position: relative;
