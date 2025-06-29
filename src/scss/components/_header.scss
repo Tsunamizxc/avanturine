@@ -6,7 +6,7 @@
     transition: 0.3s all ease;
 
     &.active {
-        background: linear-gradient(225.29deg, rgb(22, 22, 35) -0.491%, rgb(13, 10, 26) 100%);
+        background: linear-gradient(225.29deg, rgb(29 29 50) -0.491%, rgb(13, 10, 26) 100%);
          box-shadow: rem(0) rem(5) rem(10) rem(0) rgba(0, 0, 0, 0.464);
          & .header__logo_img{
             width: rem(250);
